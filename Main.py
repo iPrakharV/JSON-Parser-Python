@@ -1,10 +1,14 @@
+import json
 import sys
 
 def parse_json(data):
-    if data == '{}':
-        return "Valid JSON Object"
-    else:
-        return "Invalid JSON Object"
+    try:
+        json_object = json.loads(data)
+        if isinstance(json_object, dict):
+            return "Valid JSON Object"
+    except ValueError:
+        pass
+    return "Invalid JSON Object"
 
 if __name__ == "__main__":
     input_data = input("Enter JSON data: ")
