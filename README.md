@@ -1,6 +1,6 @@
 # JSON Parser
 
-This is a Python-based JSON parser that validates JSON objects. It checks for the correctness of the JSON format and handles multiple types of JSON structures, including strings, numbers, booleans, null values, arrays, and nested objects.
+This is a Python based JSON parser that validates JSON objects. It checks for the correctness of the JSON format and handles multiple types of JSON structures, including strings, numbers, booleans, null values, arrays, and nested objects.
 
 ## Table of Contents
 - [Introduction](#introduction)
