@@ -68,3 +68,32 @@ The parser uses Python’s built-in `json` module to validate JSON structures.
   "key4": "value",
   "key5": 101
 }
+```
+This would result in:
+```bash
+Valid JSON Object
+```
+
+### Example 2: Invalid JSON (due to improper boolean)
+```json
+{
+  "key1": true,
+  "key2": False,  # Capitalized False is invalid in JSON
+  "key3": null
+}
+```
+This would result in:
+```bash
+Invalid JSON Object: Expecting value: line 3 column 10 (char 24)
+```
+## Tests
+
+You can run the pre-defined test cases stored in the tests/ folder. Each folder contains JSON files to test the parser against.
+```bash
+# Run tests for step 1
+python parser.py < tests/step1/test1.json
+
+# Run tests for step 2
+python parser.py < tests/step2/test1.json
+
+```
