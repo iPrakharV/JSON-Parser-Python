@@ -43,7 +43,7 @@ The parser uses Python’s built-in `json` module to validate JSON structures.
     The main script takes a JSON object as input and determines whether it's valid or not.
 
     ```bash
-    python parser.py
+    python Main.py
     ```
 
     After running the script, you'll be prompted to enter a JSON string, for example:
